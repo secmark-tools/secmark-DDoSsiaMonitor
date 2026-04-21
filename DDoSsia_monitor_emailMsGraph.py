@@ -176,7 +176,7 @@ async def main():
                 await mailsend(fullalerts)
         else:
             pprint.pprint(alerts, sort_dicts=False)
-            if len(fullalerts) > 0:
+            if len(alerts) > 0:
                 await mailsend(alerts)
     except Exception as e:
         print(f"An error occurred, you are using it wrong: {e}")
